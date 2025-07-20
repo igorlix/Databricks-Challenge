@@ -6,7 +6,8 @@
   Sobre repositório, exportei diretamante da plataforma os notebooks utilizados. Adicionei comentários gerais, específicos e eventuais decisões técnicas em cada um deles, mas também compilei essas informações no relatório final.
   Tive algumas dúvidas durante o projeto, as quais também cito no relatório final.
   
-  ### A imagem a seguir descreve a pipeline do projeto, estruturada em arquitetura Medallion utlizando Delta Lake.
+  ### Pipeline
+  A imagem a seguir descreve a pipeline do projeto, estruturada em arquitetura Medallion utlizando Delta Lake.
   (imegame)
   
 ## Guia de Execução
