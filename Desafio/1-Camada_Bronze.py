@@ -11,6 +11,8 @@
 # MAGIC - A ingestão dos dados é incremental, o comando *COPY INTO* lê o volume com os arquivos CSV e adiciona apenas aqueles que ainda não foram carregados na tabela SQL.
 # MAGIC
 # MAGIC ## Decisões Técnicas:
+# MAGIC - Tentei me ater ao paralelismo utilizando o *Spark*.
+# MAGIC
 # MAGIC - Criei a tabela pela interface do Databricks, definindo como Delta Lake.
 # MAGIC
 # MAGIC - O requisito **"Ingerir diariamente o dataset"** me gerou uma dúvida. Identifiquei que o site do dataset atualiza o CSV diariamante, nesse caso, acredito que uma solução de web scraping seria mais eficaz, baixando os novos dados diariamante para a ingestão. Porém, lendo a documentação da versão gratuita do databricks, descobri que o acesso externo à Internet é restrito, nesse caso optei por adicionar manualmente os arquivos CSV no volume "arquivos_brutos", simulando a ingestão diaria ao executar as camadas após a inclusão de um novo CSV.
