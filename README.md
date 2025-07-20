@@ -8,7 +8,7 @@
   
   ### Pipeline
   A imagem a seguir descreve a pipeline do projeto, estruturada em arquitetura Medallion utlizando Delta Lake.
-  (imegame)
+  (imagem)
   
 ## Guia de Execução
   Os notebooks exportados para esse repositório contemplam as 3 camadas: Bronze, Prata e Ouro.
