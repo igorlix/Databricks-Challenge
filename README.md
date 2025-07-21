@@ -10,11 +10,14 @@ Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
 - Infelizmente não consegui salvar as saídas de cada notebook no Github, o Databricks menciona que isso requer permissões de administrador, que são limitadas na versão gratuita, talvez essa seja a causa. Nesse caso, adicionei os arquivos em HTML, quue após baixados podem ser visualizadas com suas respectivas saídas.
   
 ## Guia de Execução
+<img width="1714" height="314" alt="Captura de tela 2025-07-20 215939" src="https://github.com/user-attachments/assets/986e3b0d-5c49-4bde-9cbb-d47085126287" />
   Os notebooks exportados para esse repositório contemplam as 3 camadas: Bronze, Prata e Ouro. Para visualizar e interagir com as camadas e suas respectivas saídas é necessário baixar os arquivos HTML ou clicar nos seguintes links: (motivo citado em considerações iniciais).
   - [Camada_Bronze](https://raw.githack.com/igorlix/Databricks-Challenge/ddd3ff41ac569f6b04d3e2830e3f1e7d5d6b86bd/Desafio/HTML/1-Camada_Bronze.html)
   - [Camada Silver](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/2-Camada_Silver.html)
   - [Camada Gold](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/3-Camada_Gold.html)
   - [Relatório Exploratório](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/4-Relat%C3%B3rio_Explorat%C3%B3rio.html)
+
+
   
  Outra opção é clonar esse repositório diretamante para o Databricks. Nesse caso é necessário configurar o catálogo, adicione o CSV para um volume nomeado "arquivos_brutos" e crie a tabela SQL com o nome "fire_incidents_bronze" para a camada bronze (as outras tabelas são geradas ao rodar os notebooks).
  
