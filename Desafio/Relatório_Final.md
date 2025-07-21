@@ -40,7 +40,7 @@ Adotei uma arquitetura de Medallion Lakehouse.
 - Para a deduplicação, filtrei pela chave primário ID, e em seguida utilizei o comando *MERGE INTO* para mesclar os dados apenas se o ID for único.
 
 
-### 2.3. Camada Gold (Notebook: `3-Camada_Gold.ipynb`)
+### 2.3. Camada Gold 
 
 #### **Decisões Técnicas:**
 - Novamente tentei me ater ao paralelismo, por isso as operações como _GroupBy_ (agrupamento) e _Agg_ (agregação) são executadas de forma paralela pelo Spark.
@@ -49,7 +49,7 @@ Adotei uma arquitetura de Medallion Lakehouse.
 
 - Optei por utilizar _"overwrite"_ na escrita para reescrever os dados com os valores mais recentes das camadas anteriores.
 
-### 2.4. Relatório Exploratório (Notebook: `4-Relatório_Exploratório.ipynb`)
+### 2.4. Relatório Exploratório
 
 Este notebook demonstra o consumo dos dados da Camada Gold.
 
