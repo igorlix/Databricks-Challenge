@@ -4,7 +4,7 @@
 Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
 
 ## Considerações Iniciais
-- Em relação ao ambiente, como proposto, utilizei a versão gratuita do Databricks. Apesar que algumas limitações, é uma plataforma muito completa para a realização da atividade.
+- Em relação ao ambiente, como proposto, utilizei a versão gratuita do Databricks. Apesar de algumas limitações, é uma plataforma muito completa para a realização da atividade.
 - Sobre repositório, exportei diretamante da plataforma os notebooks utilizados. Adicionei comentários gerais, específicos e eventuais decisões técnicas em cada um deles, mas também compilei essas informações no relatório final.
 - Tive algumas dúvidas durante o projeto, as quais também cito no relatório final.
 - Infelizmente não consegui salvar as saídas de cada notebook no Github, o Databricks menciona que isso requer permissões de administrador, que são limitadas na versão gratuita, talvez essa seja a causa. Nesse caso, adicionei os arquivos em HTML, que após baixados podem ser visualizadas com suas respectivas saídas.
