@@ -10,11 +10,11 @@ Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
 - Infelizmente não consegui salvar as saídas de cada notebook no Github, o Databricks menciona que isso requer permissões de administrador, que são limitadas na versão gratuita, talvez essa seja a causa. Nesse caso, adicionei os arquivos em HTML, quue após baixados podem ser visualizadas com suas respectivas saídas.
   
 ## Guia de Execução
-  Os notebooks exportados para esse repositório contemplam as 3 camadas: Bronze, Prata e Ouro. Para visualizar e interagir com as camadas e suas respectivas saídas é necessário baixar os seguintes arquivos (motivo citado em considerações iniciais).
-  - [Baixar 1-Camada_Bronze.html]([https://raw.githubusercontent.com/igorlix/Databricks-Challenge/ddd3ff41ac569f6b04d3e2830e3f1e7d5d6b86bd/Desafio/HTML/1-Camada_Bronze.html])
-  - [Camada Silver](Desafio/HTML/2-Camada_Silver.html?raw=true)
-  - [Camada Gold](Desafio/HTML/3-Camada_Gold.html?raw=true)
-  - [Relatório Exploratório](Desafio/HTML/4-Relatório_Exploratório.html?raw=true)
+  Os notebooks exportados para esse repositório contemplam as 3 camadas: Bronze, Prata e Ouro. Para visualizar e interagir com as camadas e suas respectivas saídas é necessário baixar os arquivos HTML ou clicar nos seguintes links: (motivo citado em considerações iniciais).
+  - [Camada_Bronze.html]([https://raw.githack.com/igorlix/Databricks-Challenge/ddd3ff41ac569f6b04d3e2830e3f1e7d5d6b86bd/Desafio/HTML/1-Camada_Bronze.html])
+  - [Camada Silver]((https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/2-Camada_Silver.html))
+  - [Camada Gold](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/3-Camada_Gold.html))
+  - [Relatório Exploratório](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/4-Relat%C3%B3rio_Explorat%C3%B3rio.html))
   
  Outra opção é clonar esse repositório diretamante para Databricks. Nesse caso é necessário configurar o catálogo, adicionar o CSV e criar a tabela SQL para a camada bronze. 
 
