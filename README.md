@@ -16,7 +16,8 @@ Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
   - [Camada Gold](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/3-Camada_Gold.html)
   - [Relatório Exploratório](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/4-Relat%C3%B3rio_Explorat%C3%B3rio.html)
   
- Outra opção é clonar esse repositório diretamante para Databricks. Nesse caso é necessário configurar o catálogo, adicionar o CSV e criar a tabela SQL para a camada bronze. 
+ Outra opção é clonar esse repositório diretamante para Databricks. Nesse caso é necessário configurar o catálogo, adicione o CSV para um volume nomeado "arquivos_brutos" e crie a tabela SQL com o nome "fire_incidents_bronze" para a camada bronze. 
+<img width="1707" height="763" alt="Captura de tela 2025-07-20 215216" src="https://github.com/user-attachments/assets/544fca30-f05e-4c07-a504-3c86d9d7d8e2" />
 
 ### Jobs
   Para simular a ingestão diária criei um jobs simples que executa o notebook das camadas bronze, silver e gold em sequência a cada 24 horas. A condição de execução é o sucesso da camada anterior.
