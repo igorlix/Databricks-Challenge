@@ -47,7 +47,7 @@ Adotei uma arquitetura de Medallion Lakehouse.
 
 -  As agregações são calculadas e armazenadas previamente em tabelas separadas.
 
-- Optei por utilizar _"overwrite"_ na escrita para reescrever os dados com os valores mais recentes das camadas anteriores.
+- Verifico se as tabelas agregadas existem antes de criá-las, se sim, mesclo os novos dados com MERGE INTO.
 
 ### 2.4. Relatório Exploratório
 
