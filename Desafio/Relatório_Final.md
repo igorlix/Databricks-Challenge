@@ -1,8 +1,7 @@
 
-# Relatório Final - Desafio Databricks: Engenharia de Dados
+# Relatório Final - Databricks Challenge – Data Engineer
 
-Este relatório compila as informações essenciais, decisões técnicas, duvidas e o funcionamento da solução.
-
+Este relatório compila as informações essenciais, decisões técnicas, duvidas e um vídeo do funcionamento da solução.
 
 ## 1. Arquitetura:
 
@@ -11,7 +10,6 @@ Adotei uma arquitetura de Medallion Lakehouse.
 * **Camada Bronze**: Ingestão inicial dos dados.
 * **Camada Silver**: Limpeza, transformação e padronização dos dados.
 * **Camada Gold**: Agregação e otimização dos dados para consumo.
-
 
 
 ## 2. Implementação por Camada
@@ -28,8 +26,6 @@ Adotei uma arquitetura de Medallion Lakehouse.
 - Ao criar a tabela SQL para ingerir os dados do CSV, tive problemas ao usar o comando *COPY INTO* para mesclar os dados utulizando a opção **"inferSchema"** como *True*, há algum conflito nos tipos de dados inferidos pela plataforma para o CSV e a tabela SQL. Nesse caso declarei a opção como *False*, e adotei inicialmente o tipo de dado String como padrão para todos os valores, tratando-os posteriormente na camada **Silver**.
  
 
-
-
 ### 2.2. Camada Silver 
 
 #### **Decisões Técnicas**:
@@ -43,36 +39,34 @@ Adotei uma arquitetura de Medallion Lakehouse.
 
 - Para a deduplicação, filtrei pela chave primário ID, e em seguida utilizei o comando *MERGE INTO* para mesclar os dados apenas se o ID for único.
 
----
 
 ### 2.3. Camada Gold (Notebook: `3-Camada_Gold.ipynb`)
 
-* **Decisões Técnicas**:
-    * Mantido o foco no **paralelismo do Spark** para operações como `groupBy` (agrupamento) e `agg` (agregação).
-    * As agregações são calculadas e armazenadas em **tabelas separadas** (`fire_incidents_gold_by_time`, `fire_incidents_gold_by_district`, `fire_incidents_gold_by_battalion`).
-    * A escrita na Camada Gold utiliza o modo `overwrite`, reescrevendo os dados a cada execução com os valores mais recentes das camadas anteriores, garantindo a atualização das agregações.
+#### **Decisões Técnicas:**
+- Novamente tentei me ater ao paralelismo, por isso as operações como _GroupBy_ (agrupamento) e _Agg_ (agregação) são executadas de forma paralela pelo Spark.
 
----
+-  As agregações são calculadas e armazenadas previamente em tabelas separadas.
 
-### 2.4. Relatório Exploratório (Notebook: `4-Relatório_Exploratório.ipynb`)
+- Optei por utilizar _"overwrite"_ na escrita para reescrever os dados com os valores mais recentes das camadas anteriores.
+
+## 3. Relatório Exploratório (Notebook: `4-Relatório_Exploratório.ipynb`)
 
 Este notebook demonstra o consumo dos dados da Camada Gold.
 
 * **Objetivos**:
-    * Utilizar os dados processados e agregados na Camada Gold para consultas SQL.
+ * Utilizar os dados processados e agregados na Camada Gold para consultas SQL.
 * **Consultas Realizadas**:
-    * Tendência de incidentes ao longo do tempo (por ano e mês).
-    * Top 10 distritos com maior número de incidentes.
-    * Análise de perdas estimadas (propriedade e conteúdo) por batalhão.
-    * Identificação dos tipos de incidentes mais comuns (consultando a Camada Silver para detalhes).
+ * O número total de incidentes ao longo do tempo (por ano e mês). 
+ * Os distritos com maior e menor número de incidentes. 
+ * O total de perdas estimadas (propriedade e conteúdo) por batalhão. 
+ * Os tipos de incidentes mais comuns.
 
----
 
-## 3. Jobs
+## 4. Jobs
 
 Para simular o processo de ingestão e processamento diário, um **Job do Databricks** foi configurado. Este Job executa os notebooks das camadas Bronze, Silver e Gold em **sequência** a cada 24 horas.
-
----
+<img width="1697" height="820" alt="Captura de tela 2025-07-20 214654" src="https://github.com/user-attachments/assets/98df7a8b-c02a-4cb6-b4cf-315ae6ba96a7" />
+<img width="1706" height="816" alt="Captura de tela 2025-07-20 214701" src="https://github.com/user-attachments/assets/38d1f8e2-e733-4c02-b2dd-28a3d9d11aff" />
 
 ## 4. Desafios da Versão Gratuita
 
