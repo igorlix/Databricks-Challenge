@@ -1,5 +1,5 @@
 # Databricks Challenge- Data Engineer
-![Logo Databricks](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Databricks_Logo.svg/1200px-Databricks_Logo.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Databricks_Logo.svg/1200px-Databricks_Logo.svg.png" alt="Logo Databricks" width="100">
   Esse repositório contém a resolução do desafio de Engenharia de Dados utilizando a plataforma Databricks. O desafio consiste em ingerir uma dataset público, tratar os dados e agregar as informações de forma otimizada.
 
 Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
