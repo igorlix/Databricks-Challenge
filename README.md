@@ -15,6 +15,9 @@ Os notebooks exportados para esse repositório contemplam as 3 camadas: Bronze, 
   - [Camada Silver](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/2-Camada_Silver.html)
   - [Camada Gold](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/3-Camada_Gold.html)
   - [Relatório Exploratório](https://raw.githack.com/igorlix/Databricks-Challenge/refs/heads/main/Desafio/HTML/4-Relat%C3%B3rio_Explorat%C3%B3rio.html)
+
+Também é possível acessar pelos notebooks, mesmo que sem visualizar a saída deles:
+https://github.com/igorlix/Databricks-Challenge/tree/ec4c11b8b51d16afef6813974ff6f63b0c4f16fb/Desafio/Notebooks
   
  Outra opção é clonar esse repositório diretamante para o Databricks. Nesse caso é necessário configurar o catálogo, adicione o CSV para um volume nomeado "arquivos_brutos" e crie a tabela SQL com o nome "fire_incidents_bronze" para a camada bronze (as outras tabelas são geradas ao rodar os notebooks).
  
