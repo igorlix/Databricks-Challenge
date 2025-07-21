@@ -20,12 +20,12 @@ Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
 
 ### Jobs
   Para simular a ingestão diária criei um jobs simples que executa o notebook das camadas bronze, silver e gold em sequência a cada 24 horas. A condição de execução é o sucesso da camada anterior.
-  (imagem)
+<img width="1706" height="816" alt="Captura de tela 2025-07-20 214701" src="https://github.com/user-attachments/assets/755d60a5-894f-422a-b855-8d76f26688d9" />
+<img width="1697" height="820" alt="Captura de tela 2025-07-20 214654" src="https://github.com/user-attachments/assets/bb0d8ee5-a4fc-4f1e-ae39-85b0bdc37650" />
+
   
 ## Relatório Final
   Compilei as principais informações, decisões técnicas, dúvidas e o funcionamento geral da solução neste relatório:
 
   (relatorio)
 
-
-  
