@@ -49,20 +49,20 @@ Adotei uma arquitetura de Medallion Lakehouse.
 
 - Optei por utilizar _"overwrite"_ na escrita para reescrever os dados com os valores mais recentes das camadas anteriores.
 
-## 3. Relatório Exploratório (Notebook: `4-Relatório_Exploratório.ipynb`)
+### 2.4. Relatório Exploratório (Notebook: `4-Relatório_Exploratório.ipynb`)
 
 Este notebook demonstra o consumo dos dados da Camada Gold.
 
-* **Objetivos**:
+#### **Objetivos**:
  * Utilizar os dados processados e agregados na Camada Gold para consultas SQL.
-* **Consultas Realizadas**:
+#### **Consultas Realizadas**:
  * O número total de incidentes ao longo do tempo (por ano e mês). 
  * Os distritos com maior e menor número de incidentes. 
  * O total de perdas estimadas (propriedade e conteúdo) por batalhão. 
  * Os tipos de incidentes mais comuns.
 
 
-## 4. Jobs
+## 3. Jobs
 
 Para simular o processo de ingestão e processamento diário, um **Job do Databricks** foi configurado. Este Job executa os notebooks das camadas Bronze, Silver e Gold em **sequência** a cada 24 horas.
 <img width="1697" height="820" alt="Captura de tela 2025-07-20 214654" src="https://github.com/user-attachments/assets/98df7a8b-c02a-4cb6-b4cf-315ae6ba96a7" />
