@@ -36,6 +36,5 @@ Também é possível acessar pelos notebooks, mesmo que sem visualizar a saída 
   
 ## Relatório Final
   Compilei as principais informações, decisões técnicas, dúvidas e o funcionamento geral da solução neste relatório:
-
-  (relatorio)
+[Relatório](https://github.com/igorlix/Databricks-Challenge/blob/151373531361e15df266159c82c8e3eda00b1ce6/Desafio/Relat%C3%B3rio_Final.md)
 
