@@ -11,7 +11,7 @@ Link do dataset: https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric
   
 ## Guia de Execução
   Os notebooks exportados para esse repositório contemplam as 3 camadas: Bronze, Prata e Ouro. Para visualizar e interagir com as camadas e suas respectivas saídas é necessário baixar os seguintes arquivos (motivo citado em considerações iniciais).
-  - [Camada Bronze](Desafio/HTML/1-Camada_Bronze.html?accessType=DOWNLOAD)
+  - [Baixar 1-Camada_Bronze.html](https://raw.githubusercontent.com/igorlix/Databricks-Challenge/ddd3ff41ac569f6b04d3e2830e3f1e7d5d6b86bd/Desafio/HTML/1-Camada_Bronze.html)
   - [Camada Silver](Desafio/HTML/2-Camada_Silver.html?raw=true)
   - [Camada Gold](Desafio/HTML/3-Camada_Gold.html?raw=true)
   - [Relatório Exploratório](Desafio/HTML/4-Relatório_Exploratório.html?raw=true)
